@@ -1,8 +1,12 @@
-<h2>Followers</h2>
-<div class="grid grid-pad">
-  <div *ngFor="let user of users" class="col-1-4">
-    <div>
-      <p>Name: {{user.name}}  Location: {{user.location}}  Number of followers: {{user.followers_count}}</p>
+<h3>Most Recent Followers</h3>
+<div *ngFor="let follower of users">
+  <div class="row">
+    <div class="col-sm-1">
+      <img src="{{follower.profile_image_url}}">
     </div>
+    <div class="col-sm-3">Name: {{follower.name}}</div>
+    <div class="col-sm-3">Location: {{follower.location}}</div>
+    <div class="col-sm-3">On Twitter Since: {{follower.created_at }}</div>
+    <div class="col-sm-2">Followers: {{follower.followers_count}}</div>
   </div>
 </div>

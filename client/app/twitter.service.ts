@@ -30,12 +30,15 @@ export class TwitterService {
   private extractUserData(res: Response) {
     let body = res.json();
     let users = [];
-    console.log("BODY", body);
     for (var item in body){
-      let user = body[item];
+      let user = { name: body[item].name,
+        location: body[item].location,
+        profile_image_url: body[item].profile_image_url,
+        created_at: body[item].created_at,
+        followers_count: body[item].followers_count
+      } ;
       users.push(user);
     }
-    console.log("USERS", users);
     return users;
   }
 

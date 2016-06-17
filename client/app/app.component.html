@@ -1,6 +1,10 @@
-<h1>{{title}}</h1>
-<nav>
-   <a [routerLink]="['/Followers']">Followers</a>
-   <a [routerLink]="['/Tweets']">Tweets</a>
-</nav>
-<router-outlet></router-outlet>
+<div class="container">
+  <div id="header">
+    <h1>{{title}}</h1>
+    <nav>
+       <a [routerLink]="['/Followers']">Followers</a>
+       <a [routerLink]="['/Tweets']">Tweets</a>
+    </nav>
+  </div>
+  <router-outlet></router-outlet>
+</div>

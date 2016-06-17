@@ -1,9 +1,15 @@
 <h3>Tweets</h3>
-<div class="grid grid-pad">
-  <div *ngFor="let tweet of tweets" class="col-1-4">
-    <div>
-      <h4>Tweet name: {{tweet.user.name}} ID: {{tweet.id}}</h4>
-      <p>{{tweet.text}}</p>
+<div *ngFor="let tweet of tweets">
+  <div class="row">
+    <div class="col-sm-1">
+      <img src="{{tweet.user.profile_image_url}}" alt="">
+    </div>
+    <div class="col-sm-3">Name: {{tweet.user.name}}</div>
+    <div class="col-sm-3">Location: {{tweet.user.location}}</div>
+    <div class="col-sm-3">Time: {{tweet.created_at}}</div>
+    <div class="col-sm-2">Followers: {{tweet.user.followers_count}}</div>
+  </div>
+    <div class="row">
+      <div class="col-sm-12 tweettext">{{tweet.text}}</div>
     </div>
   </div>
-</div>

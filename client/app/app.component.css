@@ -1,5 +1,5 @@
 h1 {
-  color: #999;
+  color: black;
   margin-bottom: 0;
 }
 
@@ -23,4 +23,8 @@ nav a:hover {
 
 nav a.router-link-active {
   color: #039be5;
+}
+
+#header {
+  text-align: center;
 }

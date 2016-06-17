@@ -33,5 +33,5 @@ import { TweetsComponent } from './tweets.component';
 ])
 
 export class AppComponent {
-  title = 'Twitter Experiment';
+  title = 'Corcoran Twitter Stats';
 }

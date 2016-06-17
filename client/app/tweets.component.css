@@ -6,3 +6,13 @@ p {
   border-bottom: solid 1px black;
   padding-bottom: 25px;
 }
+
+.tweettext {
+  border-bottom: 1px solid #999;
+  padding: 0 0 25px 10px;
+  font-weight: bold;
+}
+
+.row {
+  padding-top: 20px;
+}
