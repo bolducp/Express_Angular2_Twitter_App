@@ -1,0 +1,9 @@
+<h3>Tweets</h3>
+<div class="grid grid-pad">
+  <div *ngFor="let tweet of tweets" class="col-1-4">
+    <div>
+      <h4>Tweet name: {{tweet.user.name}} ID: {{tweet.id}}</h4>
+      <p>{{tweet.text}}</p>
+    </div>
+  </div>
+</div>

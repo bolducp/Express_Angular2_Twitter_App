@@ -1,0 +1,8 @@
+<h2>Followers</h2>
+<div class="grid grid-pad">
+  <div *ngFor="let user of users" class="col-1-4">
+    <div>
+      <p>Name: {{user.name}}  Location: {{user.location}}  Number of followers: {{user.followers_count}}</p>
+    </div>
+  </div>
+</div>
