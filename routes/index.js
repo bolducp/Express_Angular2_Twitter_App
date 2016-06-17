@@ -11,14 +11,14 @@ var twitter = new twit({
 });
 
 router.get('/tweets', function(req, res, next) {
-  twitter.get('search/tweets', { q: "The Corcoran Group"}, function(error, tweets, response){
+  twitter.get('search/tweets', { q: 'the "Corcoran Group"'}, function(error, tweets, response){
     if(error) throw error;
     res.send(tweets);
   });
 });
 
 router.get('/tweetsjade', function(req, res, next) {
-  twitter.get('search/tweets', { q: "The Corcoran Group"}, function(error, tweets, response){
+  twitter.get('search/tweets', { q: "the 'Corcoran Group'"}, function(error, tweets, response){
     if(error) throw error;
 
     for (var tweet in tweets.statuses){
@@ -29,7 +29,7 @@ router.get('/tweetsjade', function(req, res, next) {
 });
 
 router.get('/app/corc-tweets', function(req, res, next) {
-  twitter.get('search/tweets', { q: "The Corcoran Group"}, function(error, tweets, response){
+  twitter.get('search/tweets', { q: "the 'Corcoran Group'"}, function(error, tweets, response){
     if(error) throw error;
     res.send(tweets.statuses);
   });
@@ -38,7 +38,6 @@ router.get('/app/corc-tweets', function(req, res, next) {
 router.get('/app/corc-followers', function(req, res, next) {
   twitter.get('followers/list', { screen_name: "corcorangroup", count: 200}, function(error, followers, response){
     if(error) throw error;
-    console.log(followers.users);
     res.send(followers.users);
   });
 });
