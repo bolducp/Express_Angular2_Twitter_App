@@ -1,4 +1,4 @@
-# Corcoran_Twitter_App
+# Express_Angular2_Twitter_App
 
 an Express-Angular 2 app using the Twitter API to display Corcoran data
 
