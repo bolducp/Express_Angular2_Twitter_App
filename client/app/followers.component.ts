@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router-deprecated';
 
 import { TwitterService } from './twitter.service';
 import { TwitterDatePipe } from './twitter-dates.pipe';
@@ -17,7 +16,7 @@ export class FollowersComponent implements OnInit {
   users: User[];
   mode = 'Observable';
 
-  constructor(private _router: Router, private _TwitterService: TwitterService) { }
+  constructor(private _TwitterService: TwitterService) { }
 
   ngOnInit() {
    this._TwitterService.getFollowers()

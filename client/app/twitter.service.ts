@@ -40,6 +40,7 @@ export class TwitterService {
         created_at: user.created_at,
         followers_count: user.followers_count
       };
+      console.log(userData);
       users.push(userData);
     }
     return users;
