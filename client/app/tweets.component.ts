@@ -4,11 +4,13 @@ import { Router } from '@angular/router-deprecated';
 import { Tweet } from './tweet';
 import { User } from './user';
 import { TwitterService } from './twitter.service';
+import { TwitterDateWithTimePipe } from './twitter-dates.pipe';
 
 @Component({
   selector: 'corc-tweets',
   templateUrl: 'app/tweets.component.html',
-  styleUrls: ['app/tweets.component.css']
+  styleUrls: ['app/tweets.component.css'],
+  pipes: [TwitterDateWithTimePipe]
 })
 
 export class TweetsComponent implements OnInit {

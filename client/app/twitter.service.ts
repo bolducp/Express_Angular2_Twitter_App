@@ -12,17 +12,17 @@ export class TwitterService {
 
   getTweets(): Observable<Tweet[]> {
     return this.http.get('app/corc-tweets')
-                    .map(this.extractData)
+                    .map(this.extractTweetData)
                     .catch(this.handleError);
   }
 
-  getTweeters(): Observable<User[]> {
+  getFollowers(): Observable<User[]> {
     return this.http.get('app/corc-followers')
                     .map(this.extractUserData)
                     .catch(this.handleError);
   }
 
-  private extractData(res: Response) {
+  private extractTweetData(res: Response) {
     let body = res.json();
     return body || {};
   }
@@ -37,18 +37,12 @@ export class TwitterService {
         name: user.name,
         location: user.location,
         profile_image_url: user.profile_image_url,
-        created_at: sanitizeDate(user.created_at),
+        created_at: user.created_at,
         followers_count: user.followers_count
       };
       users.push(userData);
     }
     return users;
-
-    function sanitizeDate(date){
-      let dateArray = date.split(" ");
-      dateArray.splice(3, 2);
-      return dateArray.join(" ");
-    }
   }
 
   private handleError (error: any) {

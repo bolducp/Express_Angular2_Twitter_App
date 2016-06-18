@@ -5,8 +5,8 @@
       <img src="{{follower.profile_image_url}}">
     </div>
     <div class="col-sm-3">Name: {{follower.name}}</div>
-    <div class="col-sm-3">Location: {{follower.location}}</div>
-    <div class="col-sm-3">On Twitter Since: {{follower.created_at }}</div>
+    <div class="col-sm-3">Location: {{follower.location }}</div>
+    <div class="col-sm-3">On Twitter Since: {{follower.created_at | twitterDate }}</div>
     <div class="col-sm-2">Followers: {{follower.followers_count}}</div>
   </div>
 </div>
