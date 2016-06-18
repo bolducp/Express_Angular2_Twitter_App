@@ -33,7 +33,7 @@ describe('TwitterDateWithTimePipe', () => {
     pipe = new TwitterDateWithTimePipe();
   });
 
-  it('strips out the time and timezone data', () => {
+  it('strips out only the timezone data', () => {
     expect(pipe.transform('Tue Dec 23 04:03:33 +0000 2008')).toEqual('Tue Dec 23 04:03:33 2008');
   });
 
