@@ -10,7 +10,7 @@ an Express-Angular 2 app using the Twitter API to display Corcoran data
 
 3: get developer API keys from Twitter
 
-4: create a .env file including all of the keys 
+4: fillout the .env.template and copy it as ".env". It should include the following keys:
 ```
 TWITTER_CONSUMER_KEY=your_key_here
 TWITTER_CONSUMER_SECRET=your_key_here
