@@ -17,17 +17,6 @@ router.get('/tweets', function(req, res, next) {
   });
 });
 
-router.get('/tweetsjade', function(req, res, next) {
-  twitter.get('search/tweets', { q: "the 'Corcoran Group'"}, function(error, tweets, response){
-    if(error) throw error;
-
-    for (var tweet in tweets.statuses){
-      var oneTweet = tweets.statuses[tweet].text;
-    }
-    res.render("tweets", {one: oneTweet})
-  });
-});
-
 router.get('/app/corc-tweets', function(req, res, next) {
   twitter.get('search/tweets', { q: "the 'Corcoran Group'"}, function(error, tweets, response){
     if(error) throw error;
