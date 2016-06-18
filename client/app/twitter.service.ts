@@ -33,14 +33,13 @@ export class TwitterService {
 
     for (var item in body){
       let user = body[item];
-      let userData = {
+      let userData: User = {
         name: user.name,
         location: user.location,
         profile_image_url: user.profile_image_url,
         created_at: user.created_at,
         followers_count: user.followers_count
       };
-      console.log(userData);
       users.push(userData);
     }
     return users;

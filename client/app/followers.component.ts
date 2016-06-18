@@ -20,7 +20,7 @@ export class FollowersComponent implements OnInit {
 
   ngOnInit() {
    this._TwitterService.getFollowers()
-    .subscribe(
+     .subscribe(
         users => this.users = users,
         error =>  this.errorMessage = <any>error);
     }
