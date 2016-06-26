@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "engines": {
-   "node": "4.2.4"
- },
+    "node": "4.2.4"
+  },
   "scripts": {
     "start": "node ./bin/www",
     "setup": "npm install"
@@ -16,6 +16,7 @@
     "dotenv": "^2.0.0",
     "express": "~4.13.1",
     "morgan": "~1.6.1",
+    "serve-favicon": "^2.3.0",
     "twitter": "^1.3.0"
   }
 }
