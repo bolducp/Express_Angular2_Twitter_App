@@ -6,8 +6,7 @@
     "node": "4.2.4"
   },
   "scripts": {
-    "start": "node ./bin/www",
-    "setup": "npm install && npm install client/"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
