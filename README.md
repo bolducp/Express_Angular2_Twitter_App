@@ -2,6 +2,9 @@
 
 an Express-Angular 2 app using the Twitter API to display Corcoran data
 
+### View App
+Deployed via Heroku here:  https://young-meadow-25237.herokuapp.com/
+
 ### Usage
 
 1: clone the repo
