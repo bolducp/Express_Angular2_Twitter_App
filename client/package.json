@@ -2,12 +2,7 @@
   "name": "corcorantwitter",
   "version": "1.0.0",
   "scripts": {
-    "lite": "lite-server",
-    "postinstall": "typings install",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "typings": "typings",
-    "test": "lite-server"
+    "typings": "typings"
   },
   "license": "ISC",
   "dependencies": {
