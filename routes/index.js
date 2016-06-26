@@ -11,14 +11,14 @@ var twitter = new twit({
 });
 
 router.get('/tweets', function(req, res, next) {
-  twitter.get('search/tweets', { q: 'the "Corcoran Group"'}, function(error, tweets, response){
+  twitter.get('search/tweets', { q: "Corcoran Real Estate"}, function(error, tweets, response){
     if(error) throw error;
     res.send(tweets);
   });
 });
 
 router.get('/app/corc-tweets', function(req, res, next) {
-  twitter.get('search/tweets', { q: "the 'Corcoran Group'"}, function(error, tweets, response){
+  twitter.get('search/tweets', { q: "Corcoran Real Estate"}, function(error, tweets, response){
     if(error) throw error;
     res.send(tweets.statuses);
   });

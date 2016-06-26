@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import { Http, Response } from '@angular/http';
-import { Observable }     from 'rxjs/Observable';
+import { Observable } from 'rxjs/Observable';
 import './rxjs-operators';
 
 import { Tweet } from './tweet';
@@ -29,7 +29,7 @@ export class TwitterService {
 
   private extractUserData(res: Response) {
     let body = res.json();
-    let users = [];
+    let users: User[] = [];
 
     for (var item in body){
       let user = body[item];
