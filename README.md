@@ -2,6 +2,10 @@
 
 an Express-Angular 2 app using the Twitter API to display Corcoran data
 
+## Update
+There have been some changes to Angular 2 since the creation of this app (esp in regards to the router). 
+I've made another starter Angular 2 Express App with a more recent version of Angular 2 here: https://github.com/bolducp/angular2-express-app-starter
+
 ### View App
 Deployed via Heroku here:  https://young-meadow-25237.herokuapp.com/
 
